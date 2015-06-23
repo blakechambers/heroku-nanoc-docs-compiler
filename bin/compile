@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+# bin/compile <build-dir> <cache-dir>
+
+puts "buildpack_env"
+
+puts ARGV[0]
+puts ARGV[1]
+puts ARGV[2]
+
+puts "buildpack_env"
