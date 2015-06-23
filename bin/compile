@@ -1,9 +1,13 @@
 #!/usr/bin/env ruby
-# bin/compile <build-dir> <cache-dir>
+# bin/compile <build-dir> <cache-dir> <env-dir>
 
 puts "buildpack_env"
 
-puts ARGV[0]
+build_dir = ARGV[0]
+
+puts "cd #{build_dir}/docs && nanoc compile"
+system "cd #{build_dir}/docs && nanoc compile"
+
 puts ARGV[1]
 puts ARGV[2]
 
