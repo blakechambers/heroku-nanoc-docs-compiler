@@ -2,8 +2,9 @@
 
 puts "detecting nanoc"
 
-if File.exists?(File.join([ARGV[0], "docs", "nanoc.yaml"]))
-  exit 0
-else
-  exit 1
-end
+# if File.exists?(File.join([ARGV[0], "docs", "nanoc.yaml"]))
+#   exit 0
+# else
+#   exit 1
+# end
+exit 0
